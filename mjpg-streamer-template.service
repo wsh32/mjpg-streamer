@@ -1,0 +1,11 @@
+[Unit]
+Description=Streams webcam to localhost:8080
+
+[Service]
+User=root
+WorkingDirectory=PWD/
+ExecStart=PWD/start.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
